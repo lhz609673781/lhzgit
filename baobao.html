@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta  charset="utf-8" /> 
+	<title>电子商务</title>
+	<style type="text/css">
+		*{
+			margin: 0px auto;
+			padding:0px;
+			
+		}
+		a{
+			text-decoration: none;
+		}
+		body{
+			background: url(images/body_bg.png) repeat-x;
+			
+		}
+		.top{
+			width: 70%;
+		}
+		.top_nav{
+			height: 30px;
+		}
+		.top_nav li{
+			list-style: none;
+			float: left;
+			color: #BCC2B6;
+		}
+		.top_nav li a{
+			line-height: 30px;
+			color: #BCC2B6;
+			
+			font-size: 14px;
+			margin: 0px 10px;
+		}
+		#firstli{
+			margin-left: 0px;
+		}
+		.top_nav2{
+			float: right;
+			color: #fff;
+			line-height: 30px;
+			height: 30px;
+			font-weight: 500;
+		}
+		.phone{
+			display: inline-block;
+			height: 30px;
+			background:url(images/top_ico.png) no-repeat; 
+			background-position: 0 -15px;
+			padding-left: 30px;
+		}
+		.help{
+			margin-left: 40px;
+			display: inline-block;
+			height: 30px;
+			background:url(images/top_ico.png) no-repeat; 
+			background-position: 0 -45px;
+			padding-left: 40px;
+		}
+		.Canada a{
+			display: inline-block;
+			background: url(images/top_img1.gif) no-repeat;
+			width: 20px;
+			height: 11px;
+			margin-left: 40px;
+		}
+		.US{
+			display: inline-block;
+			background: url(images/top_img2.gif) no-repeat;
+			width: 20px;
+			height: 11px;
+			margin-left: 20px;
+		}
+		.top_shop{
+			height: 100px;
+			background: url(images/header_bg.png) no-repeat center;	
+		}
+		.top_shop div{
+			height: 100%;
+			float: left;
+		}
+		.shopbag{
+			background: url(images/shopping_bg.png) no-repeat;
+			padding-left: 8%;
+			text-align: center;
+			color: #FFF;
+			width: 14%;
+		}
+		.shopbag h4{
+			margin-top: 24%;
+			font-size:20px;
+			font-weight:300;
+		}
+		.shopbag p{
+			color: #FEBC0A;
+			line-height: 200%;
+			margin-top: 2%;
+			background: url(images/shopping_bg.png) no-repeat 10px -95px;
+		}
+		.shoptext{
+			margin-left: 11%;
+			width: 33%;
+			text-align: center;		
+		}
+		.shopsearch{
+			width: 34%;
+		}
+		
+		.shopsearch form{
+			height: 100%;
+			width: 100%;
+			background: url(images/search.png) no-repeat;
+			background-position: right 30px ;
+		}
+		.shopsearch input{
+			margin-top: 31px;
+			margin-left: 17%;
+			width:220px;
+			height: 31px;
+			border: none;
+			background: none;
+		}
+		.top_mainnav{
+			height: 45px;
+			width:100%;
+		}
+		.top_mainnav li{
+			list-style: none;
+			float: left;
+		}
+		.top_mainnav li a{
+			display: inline-block;
+			width: 100px;
+			text-align: center;
+			text-decoration: none;
+			color: #fff;
+			font-size: 16px;
+			line-height: 28px;
+			margin: 8px 2px;
+		}
+		#topmiannav_first{
+			background:url(images/nav_active_bg.png) no-repeat, url(images/nav_active_bg.png) no-repeat right -28px,url(images/nav_active_bg.png) repeat-x 0px -56px;
+		}
+		.top_mainnav li a:hover{
+			background:url(images/nav_active_bg.png) no-repeat, url(images/nav_active_bg.png) no-repeat right -28px,url(images/nav_active_bg.png) repeat-x 0px -56px;
+		}
+		.content{
+			width: 73%;
+			height: 1120px;
+			margin-top: 23px;
+			background: url(images/content_bg.png) no-repeat left top,url(images/content_bg.png) no-repeat -2000px bottom,url(images/content_bg.png) repeat-y -1000px 0;
+			
+		}
+		.donghua{
+			display:inline-block;
+			width:930px;
+			height:300px;
+			margin-top: 15px;
+			margin-left:35px;
+		}
+		.left{
+			float: left;
+			width:214px;
+			height:720px;
+			margin-left: 35px;
+			margin-top: 28px;
+		}
+		#content_left{
+			float:left;
+			width:214px;
+			height:369px;
+			background:url(images/module_menu_bg.png) repeat-x 0 -58px
+						;
+			background-color: #FFEEB7;
+			border: 1px solid #F3DC94;
+			border-radius: 15px;
+			
+		}
+		#content_left ul{
+			height:358px;
+			width:200px;
+		}
+		#content_left ul li{
+			list-style: none;
+			line-height: 32px;
+			border-bottom: 1px solid #FFF;
+			padding-left: 30px;
+			line-height: 27px;
+		}
+		.leibie{
+			width:214px;
+			height:40px;
+			color:#FFF;
+			margin-left:60px;
+	
+		}
+		#content_left ul li a{
+			font-size:14px;
+			font-weight:bolder;
+			color: #46413E;
+			width:200px;
+		}
+		#content_left ul li:hover{
+			background-color:#F3DC94;
+		}
+		#content_left ul li a:hover{
+			text-decoration: underline;
+			color: #A81C23;
+		}
+		#left_bottom{
+			clear:left;
+			position:absolute;
+			width:214px;
+			height:331px;
+			background-color: #F5F5F2;
+			border:1px solid #EBEBE7;
+			border-radius: 15px;
+			margin-top:400px;
+			padding-top: 22px;
+
+		}
+		#left_bottom p{
+			text-align: center;
+		}
+		.shuru{
+			height:29px;
+			width:184px;
+			border-radius: 10px;
+			margin-left: 12px;
+			margin-top: 10px;
+		}
+		.join{
+			display: inline-block;
+			width:88px;
+			height:25px;
+			background: url(images/nav_active_bg.png) repeat-x 0 -31px;
+			border-radius: 8px;
+			font-size: 15px;
+			color:#FFF;
+			text-align: center;
+			margin-left: 55px;
+			margin-top: 5px;
+		}
+		.q_q{
+			width:214px;
+			height:43px;
+			background: url(images/shopping_bg.gif) no-repeat;
+			margin-left: 10px;
+			margin-top: 5px;
+		}
+		.q_q dd{
+			margin-left: 50px;
+			padding-top: 5px;
+		}
+		.fans{
+			width:214px;
+			height:43px;
+			background: url(images/shopping_bg.gif) no-repeat 0 -45px;
+			margin-left: 10px;
+			margin-top: 5px;
+		}
+		.fans dd{
+			margin-left: 50px;
+			padding-top: 5px;
+		}
+		.weixin{
+			width:210px;
+			height:43px;
+			background: url(images/shopping_bg.gif) no-repeat 0 -93px;
+			margin-left: 10px;
+			margin-top: 5px;
+		}
+		.weixin dd{
+			margin-left: 50px;
+			padding-top: 5px;
+			line-height: 15px;
+		}
+		.e_mil{
+			width:210px;
+			height:43px;
+			background: url(images/shopping_bg.gif) no-repeat 0 -142px;
+			margin-left: 10px;
+			margin-top: 5px;
+		}
+		.e_mil dd{
+			margin-left: 50px;
+			padding-top: 5px;
+			line-height: 15px;
+		}
+		#paixu{
+			clear:right;
+			float:left;
+			position: relative;
+			left: 35px;
+			top:25px;
+			}
+		.num{
+			clear: right;
+			float:left;
+			position: relative;
+			top:30px;
+			left:165px;
+			font-size: 14px;
+		}
+		.twt{
+			color:red;
+		}
+		.we{
+			clear: right;
+			float: left;
+			color:#65646B;
+			position: relative;
+			left:-466px;
+			top:70px;
+		}
+		.kuai_1{
+			clear: right;
+			float:left;
+			width: 156px;
+			background: url(images/1.jpg) no-repeat;
+			position: relative;
+			top:85px;
+			margin-left: 35px;
+			padding-left: 5px;
+			padding-top:125px;
+		}
+		.name{
+			color:#66666C;
+			font-weight: bolder;
+		}
+		.kuai_1 p{
+			font-size: 16px;
+			color:#66666C;
+		}
+		.kuai_1 p span{
+			color:red;
+		}
+		.kuai_2{
+			clear: right;
+			float:left;
+			width: 156px;
+			background: url(images/2.jpg) no-repeat;
+			position: relative;
+			top:85px;
+			margin-left: 10px;
+			padding-left: 5px;
+			padding-top:125px;
+		}
+		.name{
+			color:#66666C;
+			font-weight: bolder;
+		}
+		.kuai_2 p{
+			font-size: 16px;
+			color:#66666C;
+		}
+		.kuai_2 p span{
+			color:red;
+		}
+		.kuai_3{
+			clear: right;
+			float:left;
+			width: 156px;
+			background: url(images/3.jpg) no-repeat;
+			position: relative;
+			top:85px;
+			margin-left: 10px;
+			padding-left: 5px;
+			padding-top:125px;
+		}
+		.name{
+			color:#66666C;
+			font-weight: bolder;
+		}
+		.kuai_3 p{
+			font-size: 16px;
+			color:#66666C;
+		}
+		.kuai_3 p span{
+			color:red;
+		}
+		.kuai_4{
+			clear: right;
+			float:left;
+			width: 156px;
+			background: url(images/4.jpg) no-repeat;
+			position: relative;
+			top:85px;
+			margin-left: 10px;
+			padding-left: 5px;
+			padding-top:125px;
+		}
+		.name{
+			color:#66666C;
+			font-weight: bolder;
+		}
+		.kuai_4 p{
+			font-size: 16px;
+			color:#66666C;
+		}
+		.kuai_4 p span{
+			color:red;
+		}
+		.kuai_5{
+			clear: right;
+			float:left;
+			width: 156px;
+			background: url(images/1.jpg) no-repeat;
+			position: relative;
+			top:135px;
+			margin-left: 35px;
+			padding-left: 5px;
+			padding-top:125px;
+		}
+		.name{
+			color:#66666C;
+			font-weight: bolder;
+		}
+		.kuai_5 p{
+			font-size: 16px;
+			color:#66666C;
+		}
+		.kuai_5 p span{
+			color:red;
+		}
+		.kuai_6{
+			clear: right;
+			float:left;
+			width: 156px;
+			background: url(images/2.jpg) no-repeat;
+			position: relative;
+			top:135px;
+			margin-left: 10px;
+			padding-left: 5px;
+			padding-top:125px;
+		}
+		.name{
+			color:#66666C;
+			font-weight: bolder;
+		}
+		.kuai_6 p{
+			font-size: 16px;
+			color:#66666C;
+		}
+		.kuai_6 p span{
+			color:red;
+		}
+		.kuai_7{
+			clear: right;
+			float:left;
+			width: 156px;
+			background: url(images/3.jpg) no-repeat;
+			position: relative;
+			top:135px;
+			margin-left: 10px;
+			padding-left: 5px;
+			padding-top:125px;
+		}
+		.name{
+			color:#66666C;
+			font-weight: bolder;
+		}
+		.kuai_7 p{
+			font-size: 16px;
+			color:#66666C;
+		}
+		.kuai_7 p span{
+			color:red;
+		}
+		.kuai_8{
+			clear: right;
+			float:left;
+			width: 156px;
+			background: url(images/4.jpg) no-repeat;
+			position: relative;
+			top:135px;
+			margin-left: 10px;
+			padding-left: 5px;
+			padding-top:125px;
+		}
+		.name{
+			color:#66666C;
+			font-weight: bolder;
+		}
+		.kuai_8 p{
+			font-size: 16px;
+			color:#66666C;
+		}
+		.kuai_8 p span{
+			color:red;
+		}
+		.kuai_9{
+			clear: right;
+			float:left;
+			width: 156px;
+			background: url(images/1.jpg) no-repeat;
+			position: relative;
+			top:195px;
+			margin-left: 35px;
+			padding-left: 5px;
+			padding-top:125px;
+		}
+		.name{
+			color:#66666C;
+			font-weight: bolder;
+		}
+		.kuai_9 p{
+			font-size: 16px;
+			color:#66666C;
+		}
+		.kuai_9 p span{
+			color:red;
+		}
+		.kuai_10{
+			clear: right;
+			float:left;
+			width: 156px;
+			background: url(images/2.jpg) no-repeat;
+			position: relative;
+			top:195px;
+			margin-left: 10px;
+			padding-left: 5px;
+			padding-top:125px;
+		}
+		.name{
+			color:#66666C;
+			font-weight: bolder;
+		}
+		.kuai_10 p{
+			font-size: 16px;
+			color:#66666C;
+		}
+		.kuai_10 p span{
+			color:red;
+		}
+		.kuai_11{
+			clear: right;
+			float:left;
+			width: 156px;
+			background: url(images/3.jpg) no-repeat;
+			position: relative;
+			top:195px;
+			margin-left: 10px;
+			padding-left: 5px;
+			padding-top:125px;
+		}
+		.name{
+			color:#66666C;
+			font-weight: bolder;
+		}
+		.kuai_11 p{
+			font-size: 16px;
+			color:#66666C;
+		}
+		.kuai_11 p span{
+			color:red;
+		}
+		.kuai_12{
+			clear: right;
+			float:left;
+			width: 156px;
+			background: url(images/4.jpg) no-repeat;
+			position: relative;
+			top:195px;
+			margin-left: 10px;
+			padding-left: 5px;
+			padding-top:125px;
+		}
+		.name{
+			color:#66666C;
+			font-weight: bolder;
+		}
+		.kuai_12 p{
+			font-size: 16px;
+			color:#66666C;
+		}
+		.kuai_12 p span{
+			color:red;
+		}
+		#tage{
+			clear: right;
+			float:left;
+			position: relative;
+			top:205px;
+			width:669px;
+			height:37px;
+			margin-left: 35px;
+			border-bottom: 1px solid #D1D2CD;
+		}
+		#tage ul{
+			padding-left:119px;
+			padding-top: 10px;
+		}
+		#tage ul li{
+			width:24px;
+			height:24px;
+			text-align: center;
+			list-style: none;
+			float: left;
+			margin-left: 35px;
+		}
+		#tage ul li a{
+			font-size: 12px;
+			color: #AF0C00;
+		}
+		#tage ul li a:hover{
+			color: #FFF;
+		}
+		#tage ul li:hover{
+			width:24px;
+			height:24px;
+			background-color:#B10E00;
+		}
+		#footer{
+			width:100%;
+			height:60px;
+			background: url(images/footer_bg.png) repeat-x;
+		}
+		.safe{
+			float: left;
+			width:221px;
+			height:55px;
+			margin-left: 185px;
+		}
+		.safe dt{
+			width:66px;
+			height:55px;
+			background: url(images/footer_info.png) no-repeat;
+			position: relative;
+			top: 3px;
+		}
+		.safe dd{
+			position: relative;
+			top:-40px;
+			left:144px;
+			color:#FFF;
+			font-weight: bolder;
+		}
+		
+		.baoyou{
+			float: left;
+			width:221px;
+			height:55px;
+			margin-left: 85px;
+		}
+		.baoyou dt{
+			width:66px;
+			height:55px;
+			background: url(images/footer_info.png) no-repeat 0 -51px;
+			position: relative;
+			top: 3px;
+		}
+		.baoyou dd{
+			position: relative;
+			top:-38px;
+			left:144px;
+			color:#FFF;
+			font-weight: bolder;
+		}
+		#biao{
+			width:292px;
+			height:33px;
+			background: url(images/search.png) no-repeat;
+			position: relative;
+			top:15px;
+			left:286px;
+		}
+		#biao input{
+			position: relative;
+			top:-52px;
+			left:25px;
+			border:none;
+			background: none;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="top">
+		<div class="top_nav">
+			<ul>
+				<li><a href="" id="firstli">登录</a>&sdot;</li>
+				<li><a href="">注册</a>&sdot;</li>
+				<li><a href="">购物指南</a>&sdot;</li>
+				<li><a href="">关于我们</a>&sdot;</li>
+				<li><a href="">博客</a>&sdot;</li>
+				<li><a href="">联系我们</a></li>
+			</ul>
+			<p class="top_nav2">
+				<span class="phone">18273448199</span>
+				<span class="help">帮助</span>
+				<span class="Canada"><a href=""></a></span>
+				<span class="US"><a href=""></a></span>
+			</p>
+		</div>
+		<div class="top_shop">
+			<div class="shopbag">
+				<h4>空空的购物车</h4>
+				<p>查看</p>
+			</div>
+			<div class="shoptext">
+				<img src="images/logo.png">
+			</div>
+			<div class="shopsearch">
+				<form method="post" action="#">
+					<input type="text" placeholder="查找你喜欢的宝贝" />
+				</form>
+			</div>
+		</div>
+		<div class="top_mainnav">
+			<ul>
+				<li><a href="" id="topmiannav_first">首页</a></li>
+				<li><a href="">新品</a></li>
+				<li><a href="">男装</a></li>
+				<li><a href="">女装</a></li>
+				<li><a href="">童装</a></li>
+				<li><a href="">品牌</a></li>
+				<li><a href="">销售</a></li>
+				<li><a href="">礼品卡</a></li>
+				<li><a href="">免费赠品</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+	<div class="content">
+		<img class="donghua" src="images/1.gif" />
+		<div class="left">
+			<div id="content_left">
+				<ul>
+					<h3 class="leibie">类别浏览</h3>
+					<li><a href="">星球大战</a></li>
+					<li><a href="">澳门风云3</a></li>
+					<li><a href="">寻龙决</a></li>
+					<li><a href="">港囧</a></li>
+					<li><a href="">星球大战</a></li>
+					<li><a href="">澳门风云3</a></li>
+					<li><a href="">寻龙决</a></li>
+					<li><a href="">港囧</a></li>
+					<li><a href="">星球大战</a></li>
+					<li><a href="">澳门风云3</a></li>
+					<li><a href="">寻龙决</a></li>
+				</ul>
+			</div>
+			<div id="left_bottom">
+				<p>加入我们的通讯名单，已获</p>
+				<p>得最新的更新</p>
+				<form action="" method="">
+					<input class="shuru" type="text" name="wenben" maxlength="20" />
+				</form>
+				<a class="join" href="">Join Now</a>
+				<dl class="q_q">
+					<dt ></dt>
+					<dd>QQ信息联系</dd>
+				</dl>
+				<dl class="fans">
+					<dt ></dt>
+					<dd>成为我们的粉丝</dd>
+				</dl>
+				<dl class="weixin">
+					<dt ></dt>
+					<dd>微信信息联系或者公</dd>
+					<dd>众号</dd>
+				</dl>
+				<dl  class="e_mil">
+					<dt></dt>
+					<dd>发送给我们您的电子</dd>
+					<dd>邮件查询</dd>
+				</dl>
+			</div>
+		</div>
+	
+		<form id="paixu">排序方式：
+			<select>
+				<option>商品价格</option>
+				<option>a</option>
+			</select>
+			<select>
+				<option>商品名称</option>
+				<option>b</option>
+			</select>
+			<select>
+				<option>上架时间</option>
+				<option>c</option>
+			</select>
+		</form>
+		<p class="num">每页的商品数量12/<span class="twt">20</span>/30/50</p>
+		<h3 class="we">我们的商品</h3>
+		<div class="kuai_1">
+			<h3 class="name">商品名称</h3>
+			<p>价格：<span>RMB：12.99</span></p>
+		</div>
+		<div class="kuai_2">
+			<h3 class="name">商品名称</h3>
+			<p>价格：<span>RMB：12.99</span></p>
+		</div>
+		<div class="kuai_3">
+			<h3 class="name">商品名称</h3>
+			<p>价格：<span>RMB：12.99</span></p>
+		</div>
+		<div class="kuai_4">
+			<h3 class="name">商品名称</h3>
+			<p>价格：<span>RMB：12.99</span></p>
+		</div>
+		<div class="kuai_5">
+			<h3 class="name">商品名称</h3>
+			<p>价格：<span>RMB：12.99</span></p>
+		</div>
+		<div class="kuai_6">
+			<h3 class="name">商品名称</h3>
+			<p>价格：<span>RMB：12.99</span></p>
+		</div>
+		<div class="kuai_7">
+			<h3 class="name">商品名称</h3>
+			<p>价格：<span>RMB：12.99</span></p>
+		</div>
+		<div class="kuai_8">
+			<h3 class="name">商品名称</h3>
+			<p>价格：<span>RMB：12.99</span></p>
+		</div>
+		<div class="kuai_9">
+			<h3 class="name">商品名称</h3>
+			<p>价格：<span>RMB：12.99</span></p>
+		</div>
+		<div class="kuai_10">
+			<h3 class="name">商品名称</h3>
+			<p>价格：<span>RMB：12.99</span></p>
+		</div>
+		<div class="kuai_11">
+			<h3 class="name">商品名称</h3>
+			<p>价格：<span>RMB：12.99</span></p>
+		</div>
+		<div class="kuai_12">
+			<h3 class="name">商品名称</h3>
+			<p>价格：<span>RMB：12.99</span></p>
+		</div>
+		<div id="tage">
+			<ul >
+				<li class="one_page"><a href="">1</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+				<li><a href="">4</a></li>
+				<li><a href="">5</a></li>
+				<li><a href="">NEXT>></a></li>
+				<li class="zi"><a href="">LAST>></a></li>
+			</ul>
+		</div>
+</div>
+	<div id="footer">
+		<dl class="safe">
+			<dt></dt>
+			<dd>100%安全正品保证</dd>
+		</dl>
+		<dl class="baoyou">
+			<dt ></dt>
+			<dd>全国顺丰包邮</dd>
+		</dl>
+		<form id="biao">
+			<input type="text" name="wenben" placeholder="查找你喜欢的宝贝" maxlength="20" />
+		</form>
+	</div>
+</body>
+</html>
